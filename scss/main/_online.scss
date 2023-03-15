@@ -1,0 +1,266 @@
+@keyframes zoomIn {
+  from {
+    width: 20%;
+    z-index: 2;
+  }
+  to {
+    width: 30%;
+    z-index: 10;
+  }
+}
+
+@keyframes zoomInMain {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.online {
+  position: relative;
+  background-color: #166285;
+  &__wrapper {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    &__users {
+      display: none;
+    }
+
+    &__circles {
+      
+      &--top {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .circle {
+          &__big {
+            position: absolute;
+            left: 29px;
+            top: -2px;
+            z-index: 0;
+          }
+          
+          &__mid {
+            position: absolute;
+            left: 10px;
+            top: 102px;
+            z-index: 0;
+          }
+        }
+      }
+      &--bottom {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        .circle {
+          &__big {
+            position: absolute;
+            right: -80px;
+            bottom: 0;
+            z-index: 0;
+          }
+          
+          &__mid {
+            position: absolute;
+            right: 25px;
+            bottom: 84px;
+            z-index: 0;
+          }
+
+          &__lit {
+            position: absolute;
+            right: -17px;
+            bottom: 125px;
+            z-index: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__block {
+    position: relative;
+    z-index: 1;
+    padding: 85px 15px;
+    background-color: rgba(22, 98, 133, 0.5);
+
+    h2 {
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 48px;
+      color: #FFFFFF;
+      margin-bottom: 57px;
+    }
+
+    button {
+      box-sizing: border-box;
+      width: 90%;
+      max-width: 252px;
+      height: 57px;
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      color: #FFFFFF;
+      background-color: rgba(22, 98, 133, 0.8);
+      cursor: pointer;
+      margin: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      margin-right: 20px;
+    }
+
+    &--description {
+      margin-bottom: 27px;
+
+      h3 {
+        margin-bottom: 19px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .online {
+
+    &__wrapper {
+      position: relative;
+    }
+
+    .bg {
+
+      &__users {
+        position: absolute;
+        display: block;
+        width: 300px;
+        height: 300px;
+        left: 0;
+        right: 0;
+        width: 500px;
+        height: 100%;
+
+        &--block {
+          position: absolute;
+          width: 50%;
+        }
+      }
+
+      &__user {
+
+        &--first {
+          right: 130px;
+          bottom: 260px;
+          animation-name: zoomInMain;
+          animation-duration: 8s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        &--second {
+          left: 80px;
+          top: 300px;
+          width: 30%;
+          animation-name: zoomIn;
+          animation-duration: 8s;
+          animation-delay: 1.5s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        &--third {
+          left: 200px;
+          bottom: 130px;
+          width: 30%;
+          animation-name: zoomIn;
+          animation-duration: 8s;
+          animation-delay: 4.5s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        &--fourth {
+          left: 30px;
+          top: 180px;
+          width: 30%;
+          animation-name: zoomIn;
+          animation-duration: 8s;
+          animation-delay: 6s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        &--fifth {
+          right: 30px;
+          top: 180px;
+          width: 30%;
+          animation-name: zoomIn;
+          animation-duration: 8s;
+          animation-delay: 3s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+
+        &--sixth {
+          right: 60px;
+          top: 300px;
+          width: 30%;
+          animation-name: zoomIn;
+          animation-duration: 8s;
+          animation-delay: 7s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+
+    &__block {
+      width: 40%;
+      left: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .online {
+
+    &__wrapper {
+      max-width: 1000px;
+      margin: auto;
+      z-index: 0;
+      overflow: visible;
+    }
+  }
+}

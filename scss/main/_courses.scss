@@ -1,0 +1,157 @@
+.courses {
+  padding: 330px 15px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    color: #0B036B;
+  }
+
+  &__subtitle {
+    margin-bottom: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #484848;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  &__image {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    &--comment {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      width: 83px;
+      height: 28px;
+      background: #FFFFFF;
+      border-radius: 11px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  h4 {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0B036B;
+    text-align: center;
+  }
+  
+  p {
+    width: 80%;
+    margin: 4px auto 13px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #484848;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    &--lessons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      color: #0B036B;
+      
+      img {
+        margin-right: 9px;
+      }
+    }
+
+    &--evaluation {
+      width: 56px;
+      height: 25px;
+      background: #004FC5;
+      border: 0.8px solid #004FC5;
+      border-radius: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+
+      img {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .courses {
+    padding-top: 130px;
+    
+    &__subtitle {
+      margin-left: 30%;
+      width: 40%;
+    }
+
+    &__content {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .courses {
+
+    &__content {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+
+  .course {
+    width: 28%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .courses {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
