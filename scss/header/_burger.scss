@@ -18,8 +18,7 @@
   margin: 0;
   padding: 0;
   &__arrow {
-    height: 50%;
-    margin-left: 10px;
+    margin: 10px;
   }
   li {
     margin: 0 1rem;
@@ -150,6 +149,7 @@
 
 .submenu {
   display: flex;
+  align-items: center;
 }
 
 .dropdown {

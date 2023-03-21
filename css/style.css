@@ -112,8 +112,7 @@ table {
   padding: 0;
 }
 .menu__arrow {
-  height: 50%;
-  margin-left: 10px;
+  margin: 10px;
 }
 .menu li {
   margin: 0 1rem;
@@ -243,6 +242,7 @@ table {
 
 .submenu {
   display: flex;
+  align-items: center;
 }
 
 .dropdown {
@@ -579,16 +579,6 @@ main {
     margin: auto;
   }
 }
-@-webkit-keyframes zoomIn {
-  from {
-    width: 20%;
-    z-index: 2;
-  }
-  to {
-    width: 30%;
-    z-index: 10;
-  }
-}
 @keyframes zoomIn {
   from {
     width: 20%;
@@ -597,14 +587,6 @@ main {
   to {
     width: 30%;
     z-index: 10;
-  }
-}
-@-webkit-keyframes zoomInMain {
-  from {
-    width: 40%;
-  }
-  to {
-    width: 50%;
   }
 }
 @keyframes zoomInMain {
@@ -748,89 +730,60 @@ main {
   .online .bg__user--first {
     right: 130px;
     bottom: 260px;
-    -webkit-animation-name: zoomInMain;
-            animation-name: zoomInMain;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: zoomInMain;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
   .online .bg__user--second {
     left: 80px;
     top: 300px;
     width: 30%;
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: zoomIn;
+    animation-duration: 8s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
   .online .bg__user--third {
     left: 200px;
     bottom: 130px;
     width: 30%;
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 4.5s;
-            animation-delay: 4.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: zoomIn;
+    animation-duration: 8s;
+    animation-delay: 4.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
   .online .bg__user--fourth {
     left: 30px;
     top: 180px;
     width: 30%;
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: zoomIn;
+    animation-duration: 8s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
   .online .bg__user--fifth {
     right: 30px;
     top: 180px;
     width: 30%;
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: zoomIn;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
   .online .bg__user--sixth {
     right: 60px;
     top: 300px;
     width: 30%;
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 7s;
-            animation-delay: 7s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: zoomIn;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
   .online__block {
     width: 40%;
@@ -884,7 +837,6 @@ main {
   top: -73px;
   left: calc((100% - 146px) / 2);
   position: absolute;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: auto;
@@ -982,7 +934,6 @@ main {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: #333333;
@@ -995,14 +946,12 @@ main {
   font-size: 13px;
   line-height: 20px;
   text-align: right;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #111111;
 }
 .start__block .form__text {
   display: block;
   align-items: center;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 20px 0 10px;
@@ -1138,7 +1087,6 @@ main {
 .start__form--or {
   position: relative;
   height: 23px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 0 23px;
@@ -1267,9 +1215,11 @@ input:checked + .slider__slider:before {
 @media (min-width: 992px) {
   .start {
     padding-top: 300px;
+    width: auto;
   }
   .start__wrapper {
     box-sizing: border-box;
+    overflow-y: hidden;
   }
   .start__wrapper img {
     display: block;
@@ -1277,6 +1227,7 @@ input:checked + .slider__slider:before {
     position: absolute;
     bottom: 0;
     left: 0;
+    top: 600px;
   }
   .start__block {
     max-width: 1000px;
@@ -1300,11 +1251,6 @@ input:checked + .slider__slider:before {
   }
   .start__account {
     width: 48%;
-  }
-}
-@media (min-width: 1200px) {
-  .start {
-    padding-top: 900px;
   }
 }
 footer {
@@ -1431,7 +1377,6 @@ footer {
   margin-top: 60px;
 }
 .footer__footer--copyright div {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: flex;
