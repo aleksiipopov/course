@@ -1,0 +1,49 @@
+body {
+  height: 1700px;
+}
+
+header {
+  top: 0;
+  position: fixed;
+  height: 60px;
+}
+
+.block {
+  max-height: 1300px;
+  width: 70%;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+#star {
+  margin-top: 10px;
+  width: 24px;
+  position: absolute;
+}
+
+.block__element--1 {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  background-image: url('./img/bg-introduce.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.block__element--2 {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  background-image: url('./img/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.block__element--3 {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  background-image: url('./img/start_bg.png');
+  background-size: cover;
+  background-position: center;
+}
