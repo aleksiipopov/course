@@ -71,5 +71,5 @@ function onScrollBlock () {
 };
 
 window.addEventListener('scroll', onScroll);
-block?.addEventListener('scroll', onScrollBlock);
-input?.addEventListener('change', onChange);
+block.addEventListener('scroll', onScrollBlock);
+input.addEventListener('change', onChange);
