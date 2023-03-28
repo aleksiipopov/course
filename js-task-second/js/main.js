@@ -33,10 +33,6 @@ function renderContent (listOfArticles) {
       articleTagline.innerHTML = `Tagline: ${item[0].tagline}`;
       
       const image = item[0].image_url && document.createElement('img');
-      if (item[0].image_url) {
-        image.src = item[0].image_url;
-        image.alt = item[0].name;
-      };
       
       const articleBlock = document.createElement('div');
       articleBlock.onclick = openTaglineByClick;
@@ -57,6 +53,8 @@ function renderContent (listOfArticles) {
       articleBlock.appendChild(articleTagline);
 
       if (item[0].image_url) {
+        image.src = item[0].image_url;
+        image.alt = item[0].name;
         wrapper.appendChild(image);
       };
       wrapper.appendChild(articleBlock);
